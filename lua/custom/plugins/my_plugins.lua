@@ -1,6 +1,12 @@
 return {
     "ziglang/zig.vim",
-    "cocopon/iceberg.vim",
+    {
+        "cocopon/iceberg.vim",
+        priority = 1001,
+        config = function()
+          vim.cmd.colorscheme 'iceberg'
+        end,
+    },
     "christoomey/vim-tmux-navigator",
     "nvim-tree/nvim-web-devicons",
     "romgrk/barbar.nvim",
@@ -52,9 +58,15 @@ return {
         }
     },
     {
+        'microsoft/debugpy'
+    },
+    {
         'mfussenegger/nvim-dap',
     },
     {
         'mfussenegger/nvim-dap-python',
+    },
+    {
+        'rcarriga/nvim-dap-ui',
     },
 }
