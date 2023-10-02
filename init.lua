@@ -172,7 +172,7 @@ require('lazy').setup({
     -- See `:help indent_blankline.txt`
     main = "ibl",
     opts = {},
-  },
+ },
 
   -- "gc" to comment visual regions/lines
   { 'numToStr/Comment.nvim', opts = {} },
