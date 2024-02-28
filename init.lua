@@ -341,6 +341,9 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 -- See `:help telescope` and `:help telescope.setup()`
 require('telescope').setup {
   defaults = {
+    layout_strategy = 'vertical',
+    layout_config = { height = 0.95, width = 0.95 },
+ 
     mappings = {
       i = {
         ['<C-u>'] = false,
@@ -661,6 +664,8 @@ cmp.setup {
     { name = 'path' },
   },
 }
+
+vim.g.autoformat = false -- globally
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
