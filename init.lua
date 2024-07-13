@@ -794,7 +794,7 @@ require('lazy').setup({
       -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
       -- vim.cmd.colorscheme 'tokyonight-night'
 
-      vim.cmd.colorscheme 'neobones'
+      vim.cmd.colorscheme 'zenwritten'
       vim.opt.termguicolors = true
       vim.opt.background = 'light'
 
